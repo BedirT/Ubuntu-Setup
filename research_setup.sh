@@ -9,14 +9,12 @@ if ! gcc --version > /dev/null 2>&1; then
     sudo apt install build-essential
 fi
 
-# sudo snap install --classic code # VS Code
+sudo snap install slack --classic # Slack
+sudo snap install --classic code # VS Code
 sudo apt install git vim # git, vim
 git config --global user.name ${USER_NAME}
 git config --global user.email ${EMAIL}
 
-# check if nvidia-cuda-toolkit and nvidia driver are installed
-# run nvidia-smi and nvcc --version to see if they are working properly
-# exit if either is not installed
 if [ -f /usr/bin/nvidia-smi ]; then
     echo "\e[32mNVIDIA drivers working properly\e[0m"
 else
