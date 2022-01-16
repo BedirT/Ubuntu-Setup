@@ -70,13 +70,21 @@ pip3 install -r requirements.txt
 ./open_spiel/scripts/build_and_run_tests.sh
 
 # set bashrc
-echo "export PYTHONPATH=$PYTHONPATH:/<path_to_open_spiel>" >> ~/.bashrc
+echo "export PYTHONPATH=$PYTHONPATH:$HOME/Documents/research/open_spiel/" >> ~/.bashrc
 # For the python modules in open_spiel.
-echo "export PYTHONPATH=$PYTHONPATH:/<path_to_open_spiel>/build/python" >> ~/.bashrc
+echo "export PYTHONPATH=$PYTHONPATH:$HOME/Documents/research/open_spiel/build/python" >> ~/.bashrc
 # For the Python bindings of Pyspiel
+cd ..
 
 # install c#
 sudo apt install mono-complete
 
 # install openai gym
 pip3 install gym
+
+# Normal software
+sudo snap install vlc # video player
+# Screen recorder
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio

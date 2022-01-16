@@ -21,6 +21,10 @@ Add all tasks as bash scripts.
 - [x] Install Necessary Python Packages (Given below)
 - [x] Install C# environment - SDK
 - [x] Setup Open Spiel
+- [x] Install VLC
+- [x] Install screen recorder
+- [ ] Python Packages for DarkHex repository
+
 
 ## Bash Scripts
 - **nvidia_cuda.sh**: Install Nvidia Drivers / CUDA / CuDNN. Make sure all the parameters are set correctly.
