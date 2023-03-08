@@ -33,6 +33,7 @@ sudo ./bare_minimum_setup.sh
 - Setup the Dock with new apps
 - Default python and pip to python3, pip3
 - Change Wallpaper
+- Install authenticator
 - Setup refind for dual boot (Some manual work needed afterwards for preference based adjustments)
 - Setup Nvidia Drivers to **470** and setup CUDA and CUDNN
 
