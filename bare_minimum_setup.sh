@@ -60,6 +60,11 @@ exit # Exit the root shell
 wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -O ~/Pictures/bg.jpg $BG_IMAGE_DOWNLOAD_LINK
 gsettings set org.gnome.desktop.background picture-uri "file:///home/$USER/Pictures/bg.jpg"
 
+# Install authentication app (flathub authenticator)
+sudo apt-get install flatpak -y
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.belmoussaoui.Authenticator
+
 # Revert nvidia drivers to 470 (This is needed for dual screen - for me)
 sudo apt remove nvidia-* && sudo apt autoremove
 sudo add-apt-repository ppa:graphics-drivers/ppa
